@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Règles de confidentialité — Ecoute Mamie !</title>
+<style>
+  :root { --papier:#f5efe6; --encre:#4a3728; --sourd:#8a7a68; --rose:#c9788a; --filet:#e2d6c3; }
+  * { box-sizing:border-box }
+  body { margin:0; background:var(--papier); color:var(--encre); font-family:Georgia, "Times New Roman", serif; line-height:1.6; }
+  main { max-width:720px; margin:0 auto; padding:3rem 1.2rem 4rem; }
+  h1 { font-size:2rem; margin:0 0 .3rem; }
+  h2 { font-size:1.25rem; margin:2rem 0 .5rem; }
+  p, li { max-width:65ch; }
+  .maj { color:var(--sourd); font-style:italic; margin:0 0 1.5rem; }
+  a { color:var(--rose); }
+  footer { margin-top:3rem; color:var(--sourd); font-size:.9rem; border-top:1px solid var(--filet); padding-top:1rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Règles de confidentialité</h1>
+  <p class="maj">Application « Ecoute Mamie » — dernière mise à jour : 13 septembre 2026</p>
+
+  <h2>1. Qu'est-ce que l'application « Ecoute Mamie » ?</h2>
+  <p>« Ecoute Mamie » est un outil de bureau, développé et utilisé par l'auteur de
+  la chaîne YouTube <a href="https://www.youtube.com/channel/UCQ7jPgxmjv9Ath8qcjBpUoA">Ecoute Mamie !</a>
+  pour produire et publier ses propres vidéos. Il s'exécute uniquement sur
+  l'ordinateur de l'auteur. Il n'est ni distribué, ni proposé à d'autres
+  utilisateurs, et ne dispose d'aucun service en ligne.</p>
+
+  <h2>2. Données auxquelles l'application accède via Google</h2>
+  <p>L'application utilise l'API YouTube Data v3 avec l'autorisation OAuth du
+  compte Google de l'auteur, et uniquement de celui-ci. Les autorisations
+  demandées servent à :</p>
+  <ul>
+    <li>envoyer des vidéos sur la chaîne de l'auteur et en programmer la publication
+    (portée <code>youtube.upload</code>) ;</li>
+    <li>créer et gérer les playlists de la chaîne, et y ranger les vidéos
+    (portée <code>youtube</code>) ;</li>
+    <li>lire les commentaires publics laissés sous les vidéos de la chaîne, afin
+    que Mamie ou Papy puissent y répondre dans un épisode
+    (portée <code>youtube.force-ssl</code>).</li>
+  </ul>
+  <p>Les seules données lues sont celles de la chaîne de l'auteur : titres et
+  identifiants de ses vidéos et playlists, et les commentaires publics publiés
+  sous ses vidéos (pseudonyme public, texte du commentaire, date, nombre de
+  « j'aime », avatar public).</p>
+
+  <h2>3. Utilisation de ces données</h2>
+  <p>Les données sont utilisées exclusivement pour produire et publier les
+  épisodes de la chaîne. Un commentaire public peut être reproduit, sous son
+  pseudonyme public, dans une vidéo de réponse ; il n'est jamais associé à
+  d'autres informations sur son auteur. Aucune donnée n'est utilisée à des fins
+  publicitaires, de profilage ou de revente.</p>
+
+  <h2>4. Stockage et conservation</h2>
+  <p>Le jeton d'autorisation Google et les données lues sont conservés localement,
+  sur l'ordinateur de l'auteur, dans les fichiers de travail de l'application.
+  Un registre local des commentaires déjà utilisés est tenu pour ne pas répondre
+  deux fois au même. Ces données ne sont transmises à aucun serveur tiers, à
+  l'exception des services de Google eux-mêmes lors des appels à l'API.</p>
+
+  <h2>5. Partage avec des tiers</h2>
+  <p>Aucune donnée obtenue via l'API Google n'est partagée, vendue ou transférée
+  à des tiers. Les textes des épisodes sont rédigés avec l'aide de modèles de
+  langage tiers ; seul le texte d'un commentaire public peut leur être transmis
+  pour rédiger une réponse, jamais le jeton d'accès ni les données de compte.</p>
+
+  <h2>6. Utilisation des services YouTube API</h2>
+  <p>L'application utilise les services YouTube API. En l'utilisant, l'auteur
+  accepte les <a href="https://www.youtube.com/t/terms">Conditions d'utilisation
+  de YouTube</a> et les <a href="https://policies.google.com/privacy">Règles de
+  confidentialité de Google</a>. Vous pouvez révoquer à tout moment l'accès
+  accordé à l'application depuis la page
+  <a href="https://myaccount.google.com/permissions">Sécurité de votre compte Google</a>.</p>
+
+  <h2>7. Suppression des données</h2>
+  <p>La suppression du jeton local (fichier <code>jeton_youtube.json</code>) et
+  la révocation de l'accès dans le compte Google mettent fin à tout accès. Les
+  commentaires publics cités dans une vidéo peuvent être retirés sur simple
+  demande à l'adresse ci-dessous.</p>
+
+  <h2>8. Contact</h2>
+  <p>Pour toute question sur ces règles : <a href="mailto:deasuth@gmail.com">deasuth@gmail.com</a>.</p>
+
+  <footer><a href="index.html">← Ecoute Mamie !</a></footer>
+</main>
+</body>
+</html>
